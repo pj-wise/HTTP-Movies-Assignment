@@ -1,38 +1,38 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  margin          : 0;
+  padding         : 0;
+  font-family     : sans-serif;
   background-color: #f2f2f2;
 }
 
 .movie-card {
   background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+  border          : 0;
+  box-shadow      : 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
+  padding : 1rem;
+  cursor  : pointer;
   position: relative;
-  margin: 1rem auto;
+  margin  : 1rem auto;
 }
 
 .movie-director {
-  padding: 4px 0;
+  padding  : 4px 0;
   font-size: 0.8rem;
 }
 
 .saved-list {
   background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+  border          : 0;
+  box-shadow      : 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
-  width: 75%;
-  display: flex;
-  align-items: center;
+  padding        : 1rem;
+  cursor         : pointer;
+  position       : relative;
+  margin         : 1rem auto;
+  width          : 75%;
+  display        : flex;
+  align-items    : center;
   justify-content: space-between;
 }
 
@@ -43,58 +43,81 @@ body {
 .saved-movie {
   margin: 0 10px;
 }
+
 .saved-active {
-  color: blue;
-  border: 1px solid grey;
+  color  : blue;
+  border : 1px solid grey;
   padding: 5px;
 }
+
 .save-wrapper {
   position: relative;
-  width: 75%;
-  margin: 1rem auto;
-}
-.save-button, .edit-button, .delete-button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 50px;
-  border: 1px solid grey;
-  padding: 5px 10px;
-  background-color: lightseagreen;
-}
-.delete-button{
-  top:125px;
-}
-.edit-button{
-  top:75px;
-  text-decoration: none;
-  color: black;
-}
-.save-button:hover, .edit-button:hover, .delete-button:hover {
-  background-color: green;
-  color: white;
+  width   : 75%;
+  margin  : 1rem auto;
 }
 
+.save-button,
+.edit-button,
+.delete-button {
+  position        : absolute;
+  top             : 25px;
+  right           : 25px;
+  width           : 50px;
+  border          : 1px solid grey;
+  padding         : 5px 10px;
+  background-color: lightseagreen;
+  text-align      : center;
+}
+
+.delete-button {
+  background-color: red;
+  top             : 125px;
+}
+
+.edit-button {
+  top             : 75px;
+  text-decoration : none;
+  color           : black;
+  background-color: lightblue;
+}
+
+.save-button:hover {
+  background-color: green;
+  color           : white;
+}
+
+.delete-button:hover {
+  background-color: rgb(210, 76, 61);
+  color           : white;
+}
+
+.edit-button:hover {
+  background-color: rgb(129, 189, 245);
+  color           : white;
+}
+
+
+
 .home-button {
-  padding: 5px 10px;
+  padding         : 5px 10px;
   background-color: lightskyblue;
 }
 
 .movie-warning {
-  color: red;
+  color     : red;
   text-align: center;
 }
 
-.movieForm{
-  display: flex;
+.movieForm {
+  display       : flex;
   flex-direction: column;
-  align-items: center;
-  width: 75%;
-  margin: 1rem auto;
+  align-items   : center;
+  width         : 75%;
+  margin        : 1rem auto;
 }
 
-.input{
-  display: flex;
+.input {
+  display       : flex;
   flex-direction: column;
-  align-items: center;
+  align-items   : center;
 }
